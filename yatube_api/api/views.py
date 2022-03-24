@@ -6,7 +6,7 @@ from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet, ReadOnlyModelViewSet
 
-from posts.models import Comment, Follow, Group, Post
+from posts.models import Group, Post
 
 from . import serializers
 from .permissions import AuthorOrReadOnly, ReadOnly
